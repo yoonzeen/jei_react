@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+}
+*,
+body,
+div,
+p,
+input,
+select {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+input:focus {
+    outline: none;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.ml30 {
+    margin-left: 30px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.header {
+    width: calc(100% - 60px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(213, 222, 238, 1);
+    line-height: 80px;
+    padding: 0 30px;
+    color: #fff;
+    z-index: 3;
+}
+.header h1 {
+    background: url('../images/logo.png') no-repeat left;
+    background-size: 40px;
+    padding-left: 50px;
+    font-size: 26px;
+    font-weight: 500;
+    display: inline-block;
+}
+.header span {
+    margin-left: 30px;
+}
+.header span:last-child {
+    margin-left: 20px;
+}
+.header a {
+    text-decoration: none;
+}
+.header a:hover {
+    transition: all 0.3s;
+    color: #eb2828;
+}
+.header .btnLogout {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    font-size: 14px;
+}
+.content {
+    margin-top: 85px;
+    position: relative;
+}
+.pageTitle {
+    padding: 20px 30px 10px;
+}
+.pageSubTitle {
+    padding: 0 30px 10px;
+}
+.pageTitle h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.searchArea {
+    width: calc(100% - 60px);
+    padding: 0 30px 10px;
+}
+.searchForm {
+    margin-top: 7px;
+}
+.searchForm span {
+    font-size: 17px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+.searchForm select,
+.modalCreate select,
+.meetingRoomForm select {
+    min-width: 120px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 15px;
+    padding: 0 5px;
+    font-size: 15px;
+    border: 1px solid rgb(136, 147, 195);
+}
+.searchForm input,
+.modalCreate input,
+.meetingRoomForm input {
+    width: 110px;
+    height: 21px;
+    line-height: 21px;
+    padding: 0 5px;
+    margin-right: 15px;
+    border: 1px solid rgb(136, 147, 195);
+    outline: none;
+    font-size: 15px;
+}
+.btnArea .btn {
+    min-width: 60px;
+    display: inline-block;
+    line-height: 26px;
+    padding: 0 8px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+.btnArea .btnSearch,
+.btnArea .btnReset {
+    background-color: #aaa;
+}
+.btnArea .btnMod {
+    background-color: #a2ace2;
+    margin-right: 7px;
+}
+.btnArea .btnDel {
+    background-color: #a2a5b9;
+}
+.btnArea .btnReg {
+    background-color: #5763b1;
+}
+.btnAdd {
+    display: inline-block;
+    padding: 20px;
+    background: #9daee6 url('../images/ico_add.png') no-repeat center;
+    background-size: 60%;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    cursor: pointer;
+    z-index: 9;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+}
+.btnAdd.txt {
+    background: #9daee6;
+    border-radius: 5px;
+    color: #fff;
+    padding: 4px 12px;
+}
+.btnAdd.txt a {
+    color: #fff;
+    text-decoration: none;
+}
+.memberList {
+    width: calc(100% - 60px);
+    padding: 10px 30px;
+}
+.memberList ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+.memberList li {
+    width: 220px;
+    padding: 20px;
+    position: relative;
+    background-color: rgb(247, 248, 251);
+    margin: 5px;
+}
+.memberList li.inactive {
+    display: none;
+}
+.memberList .btnArea {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.memberList .btn {
+    line-height: 20px;
+}
+.memberList .btnArea span,
+.btnArea button {
+    display: inline-block;
+    min-width: 32px;
+    text-align: center;
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.pageTitle h3,
+.memberList h3 {
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+.memberList h3 ~ div {
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.modalBg {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.modalContent {
+    width: 250px;
+    position: fixed;
+    left: 50%;
+    top: 100px;
+    margin-left: -150px;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 11;
+    padding: 30px 25px;
+}
+.modalContent .btnClose {
+    width: 18px;
+    height: 18px;
+    background: url('../images/ico_close.png') no-repeat center;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.modalContent .btnArea {
+    text-align: center;
+    margin-top: 50px;
+}
+.modalContent .btnArea button:first-child {
+    margin-right: 10px;
+}
+.modalCreate .modalBody,
+.modalUpdate .modalBody {
+    margin-top: 30px;
+}
+.modalCreate .modalBody span,
+.modalUpdate .modalBody span {
+    display: inline-block;
+    width: 70px;
+    padding-left: 10px;
+    line-height: 25px;
+}
+
+.modalCreate .modalBody > div,
+.modalUpdate .modalBody > div {
+    margin-bottom: 20px;
+}
+.modalCreate .modalBody input,
+.modalUpdate .modalBody input {
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 15px;
+    padding: 0 5px;
+}
+.modalCreate .modalBody select,
+.modalUpdate .modalBody select {
+    font-size: 15px;
+    height: 24px;
+    line-height: 24px;
+    width: 110px;
+}
+
+.modalUpdate .modalBody > div:first-child input {
+    border-bottom: 0;
+}
+.meetingRoomForm {
+    max-width: 550px;
+    margin: 0 30px;
+    padding: 30px;
+    background-color: rgb(242, 247, 250);
+}
+.meetingRoomForm > div {
+    margin-bottom: 15px;
+}
+.meetingRoomForm input,
+.meetingRoomForm select {
+    height: 28px;
+    margin-right: 0;
+    line-height: 28px;
+    box-sizing: border-box;
+    background: #fff;
+    font-weight: 300;
+}
+.meetingRoomForm .dateArea {
+    display: inline-block;
+}
+.meetingRoomForm .dateArea fieldset {
+    border: none;
+}
+.meetingRoomForm .dateArea input {
+    padding-right: 15px;
+}
+.longInput input {
+    width: 100%;
+}
+.meetingRoomForm .label {
+    width: 120px;
+    font-size: 17px;
+    display: inline-block;
+    line-height: 25px;
+}
+
+.tableWrap {
+    margin-top: 15px;
+    padding: 0 30px;
+}
+.tableWrap table {
+    width: 100%;
+}
+.tableWrap thead th {
+    text-align: center;
+    background-color: #8693be;
+    color: #fff;
+    font-size: 16px;
+}
+.tableWrap tbody th,
+.tableWrap tbody td {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+.loginWrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #e1e6f7 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #ffffff 0%, #e1e6f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.loginForm {
+    display: inline-block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.loginForm h2 {
+    background: url('../images/logo.png') no-repeat left 5px;
+    background-size: 43px;
+    padding-left: 55px;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 7px;
+    text-align: left;
+    display: inline-block;
+}
+.loginForm h3 {
+    font-weight: 400;
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+.loginForm p {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 55px;
+}
