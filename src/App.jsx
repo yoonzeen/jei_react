@@ -13,7 +13,7 @@ const App = () => {
         <Provider store={store}>
             <BrowserRouter>
                 <Routes>
-                    <Route path='main' element={makeLayoutPage(<Main />)}></Route>
+                    <Route path='main' basename="/main" element={makeLayoutPage(<Main />)}></Route>
                     <Route path='meetingroom/*' element={makeLayoutPage(<MeetingRoom />)}>
                         <Route path='list' element={<List />}></Route>
                         <Route path='create' element={<Create />}></Route>
