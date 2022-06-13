@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/jei_react/static/css/main.a80967b6.css",
+    "main.js": "/jei_react/static/js/main.1531dbdb.js",
+    "static/media/ico_close.png": "/jei_react/static/media/ico_close.b30299941156e7ea2caf.png",
+    "index.html": "/jei_react/index.html",
+    "main.a80967b6.css.map": "/jei_react/static/css/main.a80967b6.css.map",
+    "main.1531dbdb.js.map": "/jei_react/static/js/main.1531dbdb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a80967b6.css",
+    "static/js/main.1531dbdb.js"
+  ]
+}
