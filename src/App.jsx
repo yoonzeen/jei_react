@@ -11,9 +11,9 @@ const makeLayoutPage = (element) => <Wrapper>{element}</Wrapper>;
 const App = () => {
     return (
         <Provider store={store}>
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Routes>
-                    <Route path='main' basename="/main" element={makeLayoutPage(<Main />)}></Route>
+                    <Route exact path='/' element={makeLayoutPage(<Main />)}></Route>
                     <Route path='meetingroom/*' element={makeLayoutPage(<MeetingRoom />)}>
                         <Route path='list' element={<List />}></Route>
                         <Route path='create' element={<Create />}></Route>
