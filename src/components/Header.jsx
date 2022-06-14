@@ -19,7 +19,7 @@ export default function Header() {
             <h1>AI/IT기술개발실</h1>
             <div style={{ display: 'inline-block' }}>
                 <span>
-                    <Link to='/main'>사용자 리스트</Link>
+                    <Link to='/'>사용자 리스트</Link>
                 </span>
                 <span>
                     <Link to='/meetingroom/list'>회의실 예약</Link>

@@ -7,7 +7,7 @@ export default function SignInPage() {
     const handleSignIn = async (googleUser) => {
         const googleToken = googleUser.getAuthResponse().id_token;
         await postSignIn(googleToken); //추가
-        navigate('/main');
+        navigate('/');
     };
     return (
         <div className='loginWrapper'>
