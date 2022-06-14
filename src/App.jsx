@@ -13,8 +13,8 @@ const App = () => {
         <Provider store={store}>
             <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Routes>
-                    <Route exact path='main' element={makeLayoutPage(<Main />)}></Route>
-                    <Route path='meetingroom/*' element={makeLayoutPage(<MeetingRoom />)}>
+                    <Route exact path='/main' element={makeLayoutPage(<Main />)}></Route>
+                    <Route path='/meetingroom/*' element={makeLayoutPage(<MeetingRoom />)}>
                         <Route path='list' element={<List />}></Route>
                         <Route path='create' element={<Create />}></Route>
                         <Route path='edit/:id' element={<Edit />}></Route>
