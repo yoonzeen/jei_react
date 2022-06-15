@@ -74,7 +74,7 @@ export default function EditUse() {
                 <div className='longInput'>
                     <span className='label'>사용 내역</span>
                     <span>
-                        <TextField style={{ width: '350px' }} autoComplete='off' onChange={onChange} name='usePurpose' value={usePurpose} />
+                        <TextField autoComplete='off' onChange={onChange} name='usePurpose' value={usePurpose} />
                     </span>
                 </div>
                 <div className='numberInput'>

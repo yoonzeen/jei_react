@@ -69,7 +69,7 @@ input:focus {
     font-size: 14px;
 }
 .content {
-    margin-top: 85px;
+    padding-top: 85px;
     position: relative;
 }
 .pageTitle {
@@ -320,7 +320,7 @@ input:focus {
     padding-right: 15px;
 }
 .longInput input {
-    width: 100%;
+    width: 185px;
 }
 .meetingRoomForm .label {
     width: 120px;
@@ -386,4 +386,25 @@ input:focus {
     font-size: 15px;
     line-height: 26px;
     margin-bottom: 55px;
+}
+
+@media screen and (max-width:767px) {
+    .header {width:calc(100% - 40px); padding:0 20px; line-height:50px;}
+    .header h1 { padding-left:25px; background-size:20px; font-size:16px; }
+    .header span {margin-left:15px;}
+    .header a {font-size:14px;}
+    .content {padding-top:50px;}
+    .pageTitle {padding:15px 20px 10px;}
+    .pageTitle h2 {font-size:16px;}
+    .searchArea {width:calc(100% - 49px); padding:0 20px 10px;}
+    .memberList {width:calc(100% - 40px); padding:10px 20px;}
+    .btnAdd {top:65px; font-size:15px;}
+    .tableWrap {padding:0 20px;}
+    .tableWrap thead th, .tableWrap tbody td {font-size:15px;}
+
+    .meetingRoomForm .label {width:70px;}
+    .pageSubTitle {padding:0 20px 10px;}
+    .pageSubTitle h3 {font-size:15px}
+    .meetingRoomForm {padding:20px; margin:0 20px; font-size:15px}
+    .btnArea.ml30 {margin-left:20px; font-size:15px;}
 }
