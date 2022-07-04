@@ -1,5 +1,6 @@
 # *JEI 회의실 예약 시스템*
 ![JEI 회의실 예약 시스템](https://github.com/yoonzeen/jei_react/blob/main/public/zeen2.gif?raw=true)
+![JEI 회의실 예약 시스템](https://github.com/yoonzeen/jei_react/blob/main/public/zeen3.gif?raw=true)
 
 ## Descriptions
 사내 기술역량강화교육으로 배운 React를 직원 정보 검색, 회의실 예약시스템을 만들었습니다.<br/>
